@@ -1,32 +1,30 @@
+* {
+  border: 1px solid rgb(122, 206, 255);
+}
+
 body {
-  background: peachpuff; margin: 0;
-  font-family: sans-serif;
-  text-align: center;
+  background: peachpuff;
 }                              
 
 .container {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  justify-content: space-between;
   gap: 5px;
 }                  
 
-.b,.c,.d,.e,.f,.g {
+.smalls {
   display: flex;
-  border: 2px solid rgb(74, 184, 248);
-  flex-direction: row;
   flex-wrap: wrap;
-  min-height: 10vh;
-}
-.h {
-  flex-grow: 1;
-  border: 5px dotted rgb(106, 73, 252);
+  justify-content: space-between;
 }
 
-.a {
+.smalls > div {
+  width: 25%;
+}
+.a,.h {
+  border: 6px dotted rgb(134, 108, 248);
   flex-grow: 1;
-  border: 10px dotted rgb(134, 108, 248);
 }                             
 
 @media (min-width: 600px) {
@@ -37,7 +35,9 @@ body {
  .a {
     width: 100%;
    }
-  
+  .smalls {
+    max-width: 80%;
+    flex: 3;
+  }
 
-}                                  
-
+}
