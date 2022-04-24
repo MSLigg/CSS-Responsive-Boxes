@@ -1,8 +1,5 @@
 body {
   background: papayawhip;
-  margin: 0;
-  font-family: sans-serif;
-  text-align: center;
 }                              
 
 .container {
@@ -14,26 +11,30 @@ body {
 }                  
 
 .middle {
-  border: 1px solid black;
+  border: 2px solid black;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  flex-flow: column wrap;
   flex-grow: 1;
 }
 .b {
   display: flex;
-  min-height: 40vh;
-  max-width: 100%;
+  min-height: 20vh;
   flex-grow: 5;
   border: 3px solid rgb(226, 125, 142);
+
+}
+.small {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 
 }
 .c,.d,.e {
   display: flex;
   border: 2px solid rgb(74, 184, 248);
-  flex-direction: row;
-  flex-wrap: wrap;
-  min-height: 10vh;
+      height: 100px;
+      width: 100px;
+
 }
 .f {
   flex-grow: 1;
@@ -54,8 +55,8 @@ body {
     width: 100%;
    }
   
-  .c,.d,.e {
-    flex-direction: row;
+  .small {
+    flex-direction: column;
     flex-wrap: wrap;
     flex-flow: row wrap;
   }
